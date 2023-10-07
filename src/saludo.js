@@ -1,5 +1,5 @@
 function saludo (nombre){
-    return "Hola Gabriel!";
+    return "Hola " + nombre + "!";
 
 
 }
