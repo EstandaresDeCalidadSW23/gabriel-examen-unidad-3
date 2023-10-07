@@ -4,19 +4,49 @@ test("Gabriel", function () {
 
     expect(saludo("Gabriel")).toEqual("Hola Gabriel!");
 });
+test("Benja", function () {
 
-const saludo = require("../src/saludo")
-
+    expect(saludo("Benja")).toEqual("Hola Benja!");
+});
 test("Juan", function () {
 
     expect(saludo("Juan")).toEqual("Hola Juan!");
 });
-
-const saludo = require("../src/saludo")
-
 test("Federico", function () {
-    expect(saludo("Federico")).toEqual("Hola Federico!");
+
+    expect(saludo("Kiko")).toEqual("Hola Kiko!");
 });
+
+test("Maximiliano", function () {
+
+    expect(saludo("Max")).toEqual("Hola Max!");
+});
+
+test("juan", function () {
+
+    expect(saludo("Juan")).toEqual("Hola Juan!");
+});
+
+test("PABLO", function () {
+
+    expect(saludo("Pablo")).toEqual("Hola Pablo!");
+});
+
+
+test("mArtHA", function () {
+
+    expect(saludo("Martha")).toEqual("Hola Martha!");
+});
+test("Fulano", function () {
+
+    expect(saludo("Fulano")).toEqual("Hola Fulano!");
+});
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,8 @@
-function saludo (nombre){
+const hello = () => {}
+function saludo(nombre) {
     return "Hola " + nombre + "!";
-
+    
 
 }
-module.exports=saludo
+module.exports = saludo
+
