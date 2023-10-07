@@ -14,32 +14,36 @@ test("Juan", function () {
 });
 test("Federico", function () {
 
-    expect(saludo("Kiko")).toEqual("Hola Kiko!");
+    expect(saludo("Federico")).toEqual("Hola Kiko!");
 });
 
 test("Maximiliano", function () {
 
-    expect(saludo("Max")).toEqual("Hola Max!");
+    expect(saludo("Maximiliano")).toEqual("Hola Max!");
 });
 
 test("juan", function () {
 
-    expect(saludo("Juan")).toEqual("Hola Juan!");
+    expect(saludo("juan")).toEqual("Hola Juan!");
 });
 
 test("PABLO", function () {
 
-    expect(saludo("Pablo")).toEqual("Hola Pablo!");
+    expect(saludo("PABLO")).toEqual("Hola Pablo!");
 });
 
 
 test("mArtHA", function () {
 
-    expect(saludo("Martha")).toEqual("Hola Martha!");
+    expect(saludo("mArtHA")).toEqual("Hola Martha!");
 });
 test("Fulano", function () {
 
-    expect(saludo("Fulano")).toEqual("Hola Fulano!");
+    expect(saludo("")).toEqual("Hola Fulano!");
+    
+    expect(saludo("    ")).toEqual("Hola Fulano!");
+    
+    expect(saludo(null)).toEqual("Hola Fulano!");
 });
 
 
