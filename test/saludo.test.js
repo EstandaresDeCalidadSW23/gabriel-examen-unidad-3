@@ -1,53 +1,64 @@
-const saludo = require("../src/saludo")
+const saludo = require("../src/saludo");
 
-test.skip("Gabriel", function () {
+test("Gabriel", function () {
 
     expect(saludo("Gabriel")).toEqual("Hola Gabriel!");
 });
-test.skip("Benja", function () {
+
+test("Benja", function () {
 
     expect(saludo("Benja")).toEqual("Hola Benja!");
 });
-test.skip("Juan", function () {
+
+test("Juan", function () {
 
     expect(saludo("Juan")).toEqual("Hola Juan!");
 });
 
-
-test.skip("Maximiliano", function () {
+test("Mximiliano Prueba", function () {
 
     expect(saludo("Maximiliano")).toEqual("Hola Max!");
 });
 
-test.skip("juan", function () {
+// Prueba de Maximiliano agregado de otra manera
+test("Maximiliano prueba", function () {
+    const name = "Maximiliano";
 
-    expect(saludo("juan")).toEqual("Hola Juan!");
+    const result = saludo(name);
+
+    expect(result).toEqual("Hola Max!");
 });
 
-test.skip("PABLO", function () {
+test.skip("Maximiliano", function () {
 
-    expect(saludo("PABLO")).toEqual("Hola Pablo!");
+    expect(saludo("Maximiliano")).toLowercase("Hola Max!");
 });
 
-
-test.skip("mArtHA", function () {
-
-    expect(saludo("mArtHA")).toEqual("Hola Martha!");
+//Prueba de Kiko
+test("Prueba de Federico", function () {
+    expect(saludo("Federico")).toEqual("Hola Kiko!");
 });
-test.skip("Fulano", function () {
+
+test("juan", function () {
+
+    expect(saludo("juan")).toLowercase("Hola Juan!");
+});
+
+test("PABLO", function () {
+
+    expect(saludo("PABLO")).toLowercase("Hola Pablo!");
+});
+
+test("mArtHA", function () {
+
+    expect(saludo("mArtHA")).toLowercase("Hola Martha!");
+});
+
+test("Fulano", function () {
 
     expect(saludo("")).toEqual("Hola Fulano!");
     
     expect(saludo("    ")).toEqual("Hola Fulano!");
     
-    expect(saludo(null)).toEqual("Hola Fulano!");
+    expect(saludo(null)).toEqual("Hola Fulano!");
 });
-
-
-
-
-
-
-
-
-
